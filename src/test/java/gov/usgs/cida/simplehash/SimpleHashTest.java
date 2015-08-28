@@ -13,17 +13,17 @@ public class SimpleHashTest {
 	public void testKnownHashes() {
 		String plainText = "water";
 		String hashAlgorithm = "SHA-1";
-		String expResult = "6d5a45920a15adea049c8f22d569ff209625a43b".toUpperCase();
+		String expResult = "6d5a45920a15adea049c8f22d569ff209625a43b";
 		String result = SimpleHash.hash(plainText, hashAlgorithm);
 		assertEquals(expResult, result);
 		
 		hashAlgorithm = "MD5";
-		expResult = "9460370bb0ca1c98a779b1bcc6861c2c".toUpperCase();
+		expResult = "9460370bb0ca1c98a779b1bcc6861c2c";
 		result = SimpleHash.hash(plainText, hashAlgorithm);
 		assertEquals(expResult, result);
 		
 		hashAlgorithm = "SHA-256";
-		expResult = "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501".toUpperCase();
+		expResult = "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501";
 		result = SimpleHash.hash(plainText, hashAlgorithm);
 		assertEquals(expResult, result);
 	}

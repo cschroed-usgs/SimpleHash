@@ -4,6 +4,7 @@ import javax.xml.bind.DatatypeConverter;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Locale;
 
 /**
  * A vanilla Java solution for consistently hashing Strings to 
@@ -34,7 +35,7 @@ public class SimpleHash {
 		}
 		
 		byte[] hash = md.digest();
-		String encodedHash = DatatypeConverter.printHexBinary(hash);
+		String encodedHash = DatatypeConverter.printHexBinary(hash).toLowerCase(Locale.ENGLISH);
 		return encodedHash;
 	}
 	
