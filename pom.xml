@@ -20,9 +20,9 @@
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>cida-releases</id>
+			<id>cida-public-releases</id>
 			<name>CIDA Releases</name>
-			<url>http://internal.cida.usgs.gov/maven/content/repositories/cida-releases/</url>
+			<url>http://internal.cida.usgs.gov/maven/content/repositories/cida-public-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>cida-snapshots</id>
